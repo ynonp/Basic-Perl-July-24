@@ -34,9 +34,16 @@ for (my $i=0; $i < 10; ++$i) {
     print "loop iteration: $i\n";
 }
 
-while (my $line = <>) {
-    chomp $line;
-    print "====> $line <=====\n";
+my @numbers = (2, 4, 6, 8, 10);
+
+foreach my $num (@numbers) {
+    my $dbl = $num * 2;
+    print "$dbl is twice of $num\n";
 }
+
+#while (my $line = <>) {
+    #chomp $line;
+    #print "====> $line <=====\n";
+#}
 
 
